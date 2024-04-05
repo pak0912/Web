@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: angular
+    image: angular:v1
+    # volumes:
+    #   - ./src:/app/src
+    ports:
+      - "80:80"

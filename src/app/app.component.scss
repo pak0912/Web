@@ -1,0 +1,48 @@
+.walk{
+   width: 85px;
+   height: 250px;
+   background-image: url("http://localhost:4200/assets/walk-removebg-preview.png");
+   background-repeat: no-repeat;
+   background-size: 1200px;
+   animation: walkEffect 1s steps(11) infinite;
+}
+@keyframes walkEffect{
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: -1200px;
+    }
+}
+
+.main{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.heart{
+    font-size: 10rem;
+    animation: heart .5s infinite alternate linear;
+}
+ @keyframes heart {
+    from{
+        transform: scale(.7);
+    }
+    to{
+        transform: scale(1);
+    }
+ }
+ .per{
+    perspective: 20px;
+ }
+ .bg{
+    width: 1980px;
+    height: 800px;
+    background-image: url("http://localhost:4200/assets/newpic.png");
+    transform: translateZ(-10px) scale(1);
+ }
+ .parallax{
+    transform-style: preserve-3d;
+ }
